@@ -1,0 +1,17 @@
+@use '../abstract'as *;
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @include font-face(default, var(--font-default), 500, var(--black));
+}

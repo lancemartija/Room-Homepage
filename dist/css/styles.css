@@ -1,0 +1,33 @@
+:root {
+  --font-family-spartan: "Spartan", sans-serif;
+  --font-default: .75rem;
+  --font-sm: 0.875rem;
+  --font-med: 1rem;
+  --font-lg: 1.5rem;
+  --font-xlg: 4rem;
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-spartan);
+  color: var(--black);
+  font-size: var(--font-default);
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=styles.css.map */
