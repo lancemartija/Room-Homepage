@@ -1,0 +1,43 @@
+@use '../abstract'as *;
+
+.header {
+  .nav {
+    align-items: center;
+    display: flex;
+    gap: rem(58);
+    padding: rem(64);
+
+    &__link-container {
+      display: flex;
+      gap: rem(34);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__link {
+      @include font-face(default, var(--font-default), 500, var(--white));
+      position: relative;
+
+      &::before {
+        @include position(absolute, $content: '', $left: 0, $bottom: rem(-9), $right: 0);
+        background-color: var(--white);
+        height: rem(2);
+        margin: 0 auto;
+        width: rem(16);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    >svg {
+      display: block;
+    }
+  }
+}
