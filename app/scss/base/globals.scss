@@ -14,4 +14,14 @@ body {
   margin: 0;
   padding: 0;
   @include font-face(default, var(--font-default), 500, var(--black));
+  background-color: gray;
+
+  margin: 0 auto;
+  max-width: rem(1440);
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
 }
