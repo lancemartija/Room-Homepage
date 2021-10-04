@@ -1,10 +1,11 @@
-const navMobileContainer = document.querySelector('.nav__link-container')
+const navbarMenu = document.querySelector('[data-navbar-menu]')
 
 document.addEventListener('click', e => {
-  const isHamburgerButton = e.target.matches('[data-hamburger-button]')
-  const isCloseButton = e.target.matches('[data-close-button]')
+  const isToggleButton = e.target.matches('[data-toggle-button]')
 
-  if (isHamburgerButton) navMobileContainer.classList.toggle('active')
-  if (isCloseButton) navMobileContainer.classList.toggle('active')
+  if (isToggleButton)
+    navbarMenu.classList.toggle('active')
 
+  if (e.target.closest('[data-navbar]') === null)
+    navbarMenu.classList.remove('active')
 })
