@@ -19,46 +19,90 @@
 
 <body>
   <header class="header">
-    <nav class="nav">
-      <img class="hamburger" src="app/images/icon-hamburger.svg" alt="" data-hamburger-button>
+    <nav class="nav" data-navbar>
+      <img class="hamburger" src="app/images/icon-hamburger.svg" alt="" data-toggle-button>
       <img class="logo" src="app/images/logo.svg" alt="room logo">
-      <ul class="nav__link-container">
-        <li><img class="close-icon" src="app/images/icon-close.svg" alt="" data-close-button></li>
-        <li><a class="nav__link" href="#home">home</a></li>
-        <li><a class="nav__link" href="#shop">shop</a></li>
-        <li><a class="nav__link" href="#about">about</a></li>
-        <li><a class="nav__link" href="#contact">contact</a></li>
+      <ul class="nav__link-container" data-navbar-menu>
+        <li><img class="close-icon" src="app/images/icon-close.svg" alt="" data-toggle-button></li>
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#shop">Shop</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  <main class="main">
+    <article class="hero">
+      <div class="hero__carousel">
+        <div class="hero__carousel-image">
+          <picture class="image-1">
+            <source srcset="app/images/mobile-image-hero-1.jpg" media="(max-width:39.9375em)">
+            <img src="app/images/desktop-image-hero-1.jpg"
+              alt="image of 4 white chairs and a table in a gray backgorund">
+          </picture>
+          <picture class="image-2">
+            <source srcset="app/images/mobile-image-hero-2.jpg" media="(max-width:39.9375em)">
+            <img src="app/images/desktop-image-hero-2.jpg"
+              alt="image of a yellow chair, gray chair, and a white chair in a light brown background">
+          </picture>
+          <picture class="image-3">
+            <source srcset="app/images/mobile-image-hero-3.jpg" media="(max-width:39.9375em)">
+            <img src="app/images/desktop-image-hero-3.jpg" alt="image of a black folding chair in a gray background">
+          </picture>
+        </div>
+        <div class="hero__carousel-control">
+          <a class="hero__carousel-control--left" href="#left"><img src="app/images/icon-angle-left.svg" alt=""></a>
+          <a class="hero__carousel-control--right" href="#right"><img src="app/images/icon-angle-right.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="hero__container">
+        <h1 class="hero__heading">
+          <span class="hero__heading--first">
+            Discover innovative ways to decorate
+          </span>
+          <span class="hero__heading--second">
+            We are available all across the globe
+          </span>
+          <span class="hero__heading--third">
+            Manufactured with the best materials
+          </span>
+        </h1>
+        <p class="hero__description">
+          <span class="hero__description--first">
+            We provide unmatched quality, comfort, and style for property owners
+            across the
+            country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.
+          </span>
+          <span class="hero__description--second">
+            With stores all over the world, it's easy for you to find furniture for your home or place of business.
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.
+          </span>
+          <span class="hero__description--third">
+            Our modern furniture store provide a high level of quality. Our company
+            has invested in advanced technology
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of
+            experience in this industry, we understand what customers want for their home and office.
+          </span>
+        </p>
+        <div class="hero__cta-container">
+          <a class="hero__cta-button" href="#shopnow">
+            Shop now
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                fill="#000" fill-rule="nonzero" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <section class="">
 
-
-
-
-
-  Discover innovative ways to decorate
-
-  We provide unmatched quality, comfort, and style for property owners across the country.
-  Our experts combine form and function in bringing your vision to life. Create a room in your
-  own style with our collection and make your property a reflection of you and what you love.
-
-  Shop now
-
-  We are available all across the globe
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business.
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-  store locator. Any questions? Don't hesitate to contact us today.
-
-  Shop now
-
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
+    </section>
+  </main>
 
   About our furniture
 
