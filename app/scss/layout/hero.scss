@@ -1,0 +1,88 @@
+@use '../abstract'as *;
+
+.hero {
+  display: flex;
+
+  &__carousel {
+    position: relative;
+
+    .image-2,
+    .image-3 {
+      display: none;
+    }
+
+    &-control {
+      @include position(absolute, $bottom: 0, $right: 0);
+      background-color: var(--black);
+      display: flex;
+      transform: translateX(rem(160));
+
+      &--left,
+      &--right {
+        display: grid;
+        place-items: center;
+        width: rem(80);
+        height: rem(80);
+
+        &:hover {
+          background-color: var(--very-dark-gray);
+        }
+
+        &:active {
+          background-color: var(--dark-gray);
+        }
+      }
+    }
+  }
+
+  &__container {
+    margin: auto auto rem(155);
+    max-width: rem(400);
+  }
+
+  &__heading {
+    @include font-face(default, rem(40), 600);
+    letter-spacing: rem(-2);
+    line-height: 1.1;
+    margin: 0 0 rem(28);
+
+    &--second,
+    &--third {
+      display: none;
+    }
+  }
+
+  &__description {
+    @include font-face(default, var(--font-default), 500, var(--dark-gray));
+    letter-spacing: rem(-.25);
+    line-height: 1.5;
+    margin: 0 0 rem(36);
+
+    &--second,
+    &--third {
+      display: none;
+    }
+  }
+
+  &__cta {
+    &-container {
+      align-items: center;
+      display: flex;
+    }
+
+    &-button {
+      @include font-face(default, var(--font-default), 500, var(--black));
+      margin-right: rem(44);
+      text-transform: uppercase;
+      letter-spacing: rem(13);
+
+      &:hover {
+        color: var(--dark-gray);
+
+        svg path {
+          fill: var(--dark-gray);
+        }
+      }
+    }
+  }
+}
