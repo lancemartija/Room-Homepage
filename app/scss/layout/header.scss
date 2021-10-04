@@ -2,6 +2,7 @@
 
 .header {
   @include position(absolute, $top: 0, $right: 0, $left: 0);
+  z-index: 1;
 
   .nav {
     align-items: center;
@@ -36,8 +37,9 @@
     }
 
     &__link {
-      @include font-face(default, var(--font-default), 500, var(--white));
+      @include font-face(default, var(--font-default), 600, var(--white));
       position: relative;
+      text-transform: lowercase;
 
       &::before {
         @include position(absolute, $content: '', $left: 0, $bottom: rem(-9), $right: 0);
