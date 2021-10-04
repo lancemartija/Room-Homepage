@@ -1,6 +1,8 @@
 @use '../abstract'as *;
 
 .header {
+  position: relative;
+
   .nav {
     align-items: center;
     display: flex;
@@ -8,11 +10,28 @@
     padding: rem(64);
 
     &__link-container {
+      align-items: center;
       display: flex;
-      gap: rem(34);
       list-style: none;
       margin: 0;
       padding: 0;
+
+      @include breakpoint-up(medium) {
+        gap: rem(34);
+      }
+
+      li {
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .close-icon {
+      display: none;
     }
 
     &__link {
@@ -38,6 +57,43 @@
 
     >svg {
       display: block;
+    }
+  }
+
+  @include breakpoint-down(small) {
+
+    .nav {
+      padding: rem(48) rem(24);
+
+      .hamburger {
+        display: inherit;
+      }
+
+      .close-icon {
+        display: inherit;
+        margin-right: rem(34);
+      }
+
+      &__link-container {
+        @include position(absolute, $top: 0, $right: 0, $left: 0);
+        background-color: var(--white);
+        visibility: hidden;
+        justify-content: space-between;
+        padding: rem(48) rem(24);
+        z-index: 1;
+      }
+
+      .active {
+        visibility: visible;
+      }
+
+      &__link {
+        @include font-face(default, var(--font-default), 600, var(--black));
+
+        &::before {
+          display: none;
+        }
+      }
     }
   }
 }
