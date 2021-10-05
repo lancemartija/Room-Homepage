@@ -158,6 +158,12 @@ ul {
 .hero__carousel {
   position: relative;
 }
+.hero__carousel .desktop-image-1, .hero__carousel .desktop-image-2, .hero__carousel .desktop-image-3 {
+  height: 33.9375rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
 .hero__carousel .image-2,
 .hero__carousel .image-3 {
   display: none;
@@ -183,8 +189,9 @@ ul {
   background-color: var(--dark-gray);
 }
 .hero__container {
-  margin: auto auto 9.6875rem;
-  max-width: 25rem;
+  margin: auto;
+  padding: 0 1.5rem;
+  width: 25rem;
 }
 .hero__heading {
   font-family: var(--font-family-spartan);
@@ -220,7 +227,8 @@ ul {
   font-weight: 500;
   margin-right: 2.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.8125rem;
+  letter-spacing: 0.6875rem;
+  width: 100%;
 }
 .hero__cta-button:hover {
   color: var(--dark-gray);
