@@ -17,16 +17,13 @@
     }
   }
 
-  @include breakpoint-up(desktop) {
-    display: block;
-  }
-
   @include breakpoint-down(tablet) {
     display: block;
     padding: rem(32) rem(16);
   }
 
   @include breakpoint-up(lg-desktop) {
+    // display: block;
     @include position(absolute, $bottom: 0);
     margin: 0 0 rem(24);
   }

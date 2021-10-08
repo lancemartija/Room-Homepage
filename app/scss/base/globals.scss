@@ -16,15 +16,18 @@ body {
     color: var(--white);
   }
 
-  @include breakpoint-up(lg-desktop) {
-    display: grid;
-    place-items: center;
-  }
+  // @include breakpoint-up(lg-desktop) {
+  //   display: grid;
+  //   place-items: center;
+  // }
 
   margin: 0;
   padding: 0;
   @include font-face(default, var(--font-default), 500, var(--black));
   position: relative;
+
+  max-width: rem(1440);
+  margin: 0 auto;
 }
 
 a,
