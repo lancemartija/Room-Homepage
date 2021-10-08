@@ -15,6 +15,11 @@
         color: var(--dark-gray);
       }
     }
+
+    @include breakpoint-down(tablet) {
+      border: 1px solid #000;
+      padding: rem(16);
+    }
   }
 
   @include breakpoint-up(desktop) {
@@ -22,10 +27,8 @@
   }
 
   @include breakpoint-down(tablet) {
-    border: 1px solid #000;
     display: block;
-    margin: rem(32) rem(16);
-    padding: rem(16);
+    padding: rem(32) rem(16);
   }
 
   @include breakpoint-up(lg-desktop) {
