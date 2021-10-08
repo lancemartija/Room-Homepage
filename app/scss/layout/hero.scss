@@ -1,7 +1,9 @@
 @use '../abstract'as *;
 
 .hero {
-  display: flex;
+  @include breakpoint-up(tablet) {
+    display: flex;
+  }
 
   &__carousel {
     position: relative;
@@ -14,7 +16,7 @@
         height: rem(543);
         max-width: rem(840);
         object-fit: cover;
-        object-position: center;
+        object-position: left;
         width: 100%;
       }
     }
@@ -89,6 +91,47 @@
   @include breakpoint-down(desktop) {
     &__heading {
       font-size: rem(36);
+    }
+  }
+
+  @include breakpoint-down(tablet) {
+    &__carousel {
+      .desktop-image {
+
+        &-1,
+        &-2,
+        &-3 {
+          height: auto;
+        }
+      }
+
+      &-control {
+        transform: none;
+
+        &--left,
+        &--right {
+          width: rem(56);
+          height: rem(56);
+
+          img {
+            scale: .7;
+          }
+        }
+      }
+    }
+
+    &__container {
+      padding: rem(74) rem(32);
+      width: auto;
+    }
+
+    &__heading {
+      letter-spacing: rem(-1.5);
+      font-size: rem(28);
+    }
+
+    &__description {
+      margin-bottom: rem(56);
     }
   }
 }

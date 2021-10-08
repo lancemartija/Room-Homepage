@@ -1,12 +1,13 @@
 @use '../abstract'as *;
 
 .about {
-  display: flex;
+  @include breakpoint-up(tablet) {
+    display: flex;
+  }
 
   &__text-container {
     width: rem(580);
     margin: auto 0;
-    // width: 100%;
   }
 
   &__heading {
@@ -23,6 +24,23 @@
     line-height: 1.5;
     padding: 0 rem(48);
   }
+
+  @include breakpoint-down(tablet) {
+    &__text-container {
+      width: auto;
+      margin: 0;
+      padding: rem(60) rem(32);
+    }
+
+    &__heading {
+      padding: 0;
+      margin-bottom: rem(12);
+    }
+
+    &__description {
+      padding: 0;
+    }
+  }
 }
 
 .image {
@@ -30,16 +48,21 @@
   &-dark,
   &-light {
     width: 100%;
-    height: rem(266);
     object-fit: cover;
     object-position: center;
   }
 
-  &-dark {
-    max-width: rem(420);
-  }
+  @include breakpoint-up(tablet) {
+    &-dark {
+      max-width: rem(420);
+      height: rem(266);
+    }
 
-  &-light {
-    max-width: rem(440);
+    &-light {
+      @include breakpoint-up(tablet) {
+        max-width: rem(440);
+        height: rem(266);
+      }
+    }
   }
 }
