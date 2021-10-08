@@ -88,14 +88,12 @@ ul {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 30em) {
-  .header .nav__link-container {
-    gap: 2.125rem;
-  }
-}
 .header .nav__link-container li {
   align-items: center;
   display: flex;
+}
+.header .nav__link-container li:not(:first-child) {
+  margin-right: 2.125rem;
 }
 .header .nav .hamburger {
   display: none;
@@ -186,7 +184,7 @@ ul {
   position: relative;
 }
 .hero__carousel .desktop-image-1, .hero__carousel .desktop-image-2, .hero__carousel .desktop-image-3 {
-  height: 33.9375rem;
+  height: 33.375rem;
   max-width: 52.5rem;
   object-fit: cover;
   object-position: left;

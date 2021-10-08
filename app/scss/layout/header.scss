@@ -18,13 +18,13 @@
       margin: 0;
       padding: 0;
 
-      @include breakpoint-up(mobile) {
-        gap: rem(34);
-      }
-
       li {
         align-items: center;
         display: flex;
+
+        &:not(:first-child) {
+          margin-right: rem(34);
+        }
       }
     }
 
