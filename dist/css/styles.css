@@ -374,12 +374,6 @@ ul {
 .footer .attribution a:hover {
   color: var(--dark-gray);
 }
-@media (max-width: 47.9375em) {
-  .footer .attribution {
-    border: 1px solid #000;
-    padding: 1rem;
-  }
-}
 @media (min-width: 70em) {
   .footer {
     display: block;
