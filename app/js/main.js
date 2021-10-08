@@ -21,14 +21,12 @@ document.addEventListener('click', e => {
     counter++
     if (counter > 3) counter = 1
     display()
-    console.log(counter)
   }
 
   if (isLeftButton || e.target.closest('[data-prev-button]') != null) {
     counter--
     if (counter < 1) counter = 3
     display()
-    console.log(counter)
   }
 })
 
