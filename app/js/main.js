@@ -17,14 +17,14 @@ document.addEventListener('click', e => {
   if (e.target.closest('[data-navbar]') == null)
     navbarMenu.classList.remove('active')
 
-  if (isRightButton || e.target.closest('[data-next-button') != null) {
+  if (isRightButton || e.target.closest('[data-next-button]') != null) {
     counter++
     if (counter > 3) counter = 1
     display()
     console.log(counter)
   }
 
-  if (isLeftButton || e.target.closest('[data-prev-button') != null) {
+  if (isLeftButton || e.target.closest('[data-prev-button]') != null) {
     counter--
     if (counter < 1) counter = 3
     display()
