@@ -1,3 +1,5 @@
+const body = document.querySelector('[data-body]')
+const header = document.querySelector('[data-header')
 const navbarMenu = document.querySelector('[data-navbar-menu]')
 const hero1 = document.querySelectorAll('[data-hero-1]')
 const hero2 = document.querySelectorAll('[data-hero-2]')
@@ -11,11 +13,17 @@ document.addEventListener('click', e => {
   const isLeftButton = e.target.matches('[data-prev-button]')
   const isRightButton = e.target.matches('[data-next-button]')
 
-  if (isToggleButton)
+  if (isToggleButton) {
     navbarMenu.classList.toggle('active')
+    header.classList.toggle('overlay')
+    body.classList.toggle('no-scroll')
+  }
 
-  if (e.target.closest('[data-navbar]') == null)
+  if (e.target.closest('[data-navbar]') == null) {
     navbarMenu.classList.remove('active')
+    header.classList.remove('overlay')
+    body.classList.remove('no-scroll')
+  }
 
   if (isRightButton || e.target.closest('[data-next-button]') != null) {
     counter++
