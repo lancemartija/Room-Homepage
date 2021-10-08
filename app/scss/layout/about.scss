@@ -34,11 +34,12 @@
 
     &__heading {
       padding: 0;
-      margin-bottom: rem(12);
+      margin-bottom: rem(16);
     }
 
     &__description {
       padding: 0;
+      line-height: 1.6;
     }
   }
 }
