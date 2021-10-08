@@ -29,6 +29,7 @@
 
       &--left,
       &--right {
+        cursor: pointer;
         display: grid;
         place-items: center;
         width: rem(80);

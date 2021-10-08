@@ -199,6 +199,7 @@ ul {
   transform: translateX(10rem);
 }
 .hero__carousel-control--left, .hero__carousel-control--right {
+  cursor: pointer;
   display: grid;
   place-items: center;
   width: 5rem;
