@@ -280,6 +280,7 @@ ul {
   .hero__heading {
     letter-spacing: -0.09375rem;
     font-size: 1.75rem;
+    margin-bottom: 1.25rem;
   }
   .hero__description {
     margin-bottom: 3.5rem;
@@ -322,10 +323,11 @@ ul {
   }
   .about__heading {
     padding: 0;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
   .about__description {
     padding: 0;
+    line-height: 1.6;
   }
 }
 
