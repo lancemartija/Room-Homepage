@@ -29,12 +29,16 @@ body {
   font-size: var(--font-default);
   font-weight: 500;
   position: relative;
-  max-width: 90rem;
-  margin: 0 auto;
 }
 body ::selection {
   background-color: var(--black);
   color: var(--white);
+}
+@media (min-width: 90em) {
+  body {
+    display: grid;
+    place-items: center;
+  }
 }
 
 a,
@@ -67,6 +71,12 @@ ul {
 .main {
   position: relative;
 }
+@media (min-width: 90em) {
+  .main {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -373,6 +383,7 @@ ul {
 }
 @media (min-width: 90em) {
   .footer {
+    display: block;
     position: absolute;
     bottom: 0;
     margin: 0 0 1.5rem;
