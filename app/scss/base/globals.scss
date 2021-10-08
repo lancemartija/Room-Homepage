@@ -49,3 +49,7 @@ ul {
 .no-display {
   display: none;
 }
+
+.no-scroll {
+  overflow: hidden !important;
+}

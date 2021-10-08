@@ -64,6 +64,10 @@ ul {
   display: none;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+}
+
 .main {
   position: relative;
 }
@@ -174,6 +178,11 @@ ul {
   .header .nav__link::before {
     display: none;
   }
+}
+
+.overlay {
+  background-color: #00000099;
+  bottom: 0;
 }
 
 .hero {
