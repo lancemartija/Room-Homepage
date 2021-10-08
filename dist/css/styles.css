@@ -98,7 +98,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .header .nav__link-container {
     gap: 2.125rem;
   }
@@ -136,7 +136,7 @@ ul {
 .header .nav__link:hover::before {
   visibility: visible;
 }
-@media (max-width: 39.9375em) {
+@media (max-width: 47.9375em) {
   .header .nav {
     padding: 3rem 1.5rem;
   }
@@ -180,9 +180,11 @@ ul {
   }
 }
 
-.overlay {
-  background-color: #00000099;
-  bottom: 0;
+@media (max-width: 47.9375em) {
+  .overlay {
+    background-color: #00000099;
+    bottom: 0;
+  }
 }
 
 .hero {
@@ -260,6 +262,11 @@ ul {
 .hero__cta-button:hover svg path {
   fill: var(--dark-gray);
 }
+@media (max-width: 74.9375em) {
+  .hero__heading {
+    font-size: 2.25rem;
+  }
+}
 
 .about {
   display: flex;
@@ -301,7 +308,7 @@ ul {
   max-width: 27.5rem;
 }
 
-@media (max-width: 89.9375em) {
+@media (max-width: 74.9375em) {
   .footer {
     display: none;
   }

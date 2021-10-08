@@ -18,7 +18,7 @@
       margin: 0;
       padding: 0;
 
-      @include breakpoint-up(medium) {
+      @include breakpoint-up(mobile) {
         gap: rem(34);
       }
 
@@ -58,7 +58,7 @@
     }
   }
 
-  @include breakpoint-down(small) {
+  @include breakpoint-down(tablet) {
     .nav {
       padding: rem(48) rem(24);
 
@@ -102,6 +102,8 @@
 }
 
 .overlay {
-  background-color: #00000099;
-  bottom: 0;
+  @include breakpoint-down(tablet) {
+    background-color: #00000099;
+    bottom: 0;
+  }
 }

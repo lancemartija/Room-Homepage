@@ -85,4 +85,10 @@
       }
     }
   }
+
+  @include breakpoint-down(desktop) {
+    &__heading {
+      font-size: rem(36);
+    }
+  }
 }

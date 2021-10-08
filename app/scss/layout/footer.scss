@@ -1,11 +1,11 @@
 @use '../abstract'as *;
 
 .footer {
-  @include breakpoint-down(large) {
+  @include breakpoint-down(desktop) {
     display: none;
   }
 
-  @include breakpoint-up(xlarge) {
+  @include breakpoint-up(lg-desktop) {
     margin: 0 0 rem(24);
     @include position(absolute, $bottom: 0);
 

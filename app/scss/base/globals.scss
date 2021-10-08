@@ -16,7 +16,7 @@ body {
     color: var(--white);
   }
 
-  @include breakpoint-up(xlarge) {
+  @include breakpoint-up(lg-desktop) {
     display: grid;
     place-items: center;
   }

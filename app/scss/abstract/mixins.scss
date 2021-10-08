@@ -12,16 +12,19 @@
   }
 }
 
-// 640px, 1024px, 1440px
-$breakpoints-up: ("medium": "40em",
-  "large": "64em",
-  "xlarge": "90em"
+// 480px, 768px, 1024px, 1200px, 1440px
+$breakpoints-up: ("mobile": "30em",
+  "tablet": "48em",
+  "laptop": "64em",
+  "desktop": "70em",
+  "lg-desktop": "90em"
 );
 
-// 639px, 1023px, 1439px
-$breakpoints-down: ("small": "39.9375em",
-  "medium": "63.9375em",
-  "large": "89.9375em"
+// 479px, 767px, 1023px, 1199px
+$breakpoints-down: ("mobile": "29.9375em",
+  "tablet": "47.9375em",
+  "laptop": "63.9375em",
+  "desktop": "74.9375em"
 );
 
 
