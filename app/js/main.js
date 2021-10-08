@@ -1,7 +1,7 @@
 const navbarMenu = document.querySelector('[data-navbar-menu]')
-const hero1 = document.querySelectorAll('[data-hero-1')
-const hero2 = document.querySelectorAll('[data-hero-2')
-const hero3 = document.querySelectorAll('[data-hero-3')
+const hero1 = document.querySelectorAll('[data-hero-1]')
+const hero2 = document.querySelectorAll('[data-hero-2]')
+const hero3 = document.querySelectorAll('[data-hero-3]')
 let counter = 1
 
 display()

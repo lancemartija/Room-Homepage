@@ -1,0 +1,25 @@
+@use '../abstract'as *;
+
+.footer {
+  @include breakpoint-down(large) {
+    display: none;
+  }
+
+  @include breakpoint-up(xlarge) {
+    margin: 0 0 rem(24);
+    @include position(absolute, $bottom: 0);
+
+    .attribution {
+      @include font-face(default, rem(10), 400, var(--very-dark-gray));
+
+      a {
+        color: var(--black);
+        font-weight: 700;
+
+        &:hover {
+          color: var(--dark-gray);
+        }
+      }
+    }
+  }
+}

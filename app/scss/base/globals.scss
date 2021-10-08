@@ -11,13 +11,20 @@ html {
 }
 
 body {
+  ::selection {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  @include breakpoint-up(xlarge) {
+    display: grid;
+    place-items: center;
+  }
+
   margin: 0;
   padding: 0;
   @include font-face(default, var(--font-default), 500, var(--black));
   position: relative;
-
-  margin: 0 auto;
-  max-width: rem(1440);
 }
 
 a,
@@ -37,29 +44,8 @@ ul {
 
 .display {
   display: block;
-  animation: fade-in 1000ms ease-in-out 0s forwards;
-  -webkit-animation: fade-in 1000ms ease-in-out 0s forwards;
 }
 
 .no-display {
   display: none;
-}
-
-@keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
-
-  to {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
 }

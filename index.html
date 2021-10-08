@@ -18,20 +18,20 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav" data-navbar>
-      <img class="hamburger" src="app/images/icon-hamburger.svg" alt="" data-toggle-button>
-      <img class="logo" src="app/images/logo.svg" alt="room logo">
-      <ul class="nav__link-container" data-navbar-menu>
-        <li><img class="close-icon" src="app/images/icon-close.svg" alt="" data-toggle-button></li>
-        <li><a class="nav__link" href="#home">Home</a></li>
-        <li><a class="nav__link" href="#shop">Shop</a></li>
-        <li><a class="nav__link" href="#about">About</a></li>
-        <li><a class="nav__link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
   <main class="main">
+    <header class="header">
+      <nav class="nav" data-navbar>
+        <img class="hamburger" src="app/images/icon-hamburger.svg" alt="" data-toggle-button>
+        <img class="logo" src="app/images/logo.svg" alt="room logo">
+        <ul class="nav__link-container" data-navbar-menu>
+          <li><img class="close-icon" src="app/images/icon-close.svg" alt="" data-toggle-button></li>
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#shop">Shop</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <article class="hero">
       <div class="hero__carousel">
         <div class="hero__carousel-image">
@@ -102,25 +102,31 @@
         </div>
       </div>
     </article>
-    <section class="">
-
+    <section class="about">
+      <div class="about__image-container">
+        <img class="image-dark" src="app/images/image-about-dark.jpg" alt="image of a white chair on a white room">
+      </div>
+      <div class="about__text-container">
+        <h2 class="about__heading">About our furniture</h2>
+        <p class="about__description">Our multifunctional collection blends
+          design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best
+          express your interests and what inspires you. Find the furniture pieces you need, from traditional to
+          contemporary styles or anything in between. Product specialists are available to help you create your dream
+          space.</p>
+      </div>
+      <div class="about__image-container">
+        <img class="image-light" src="app/images/image-about-light.jpg"
+          alt="image of 2 black chairs, a small round table with a white bowl on it, and a gray bed in a dark room">
+      </div>
     </section>
   </main>
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  <!--
-  <footer>
+  <footer class="footer">
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Lance Martija</a>.
     </div>
   </footer>
-  -->
+
 </body>
 
 </html>

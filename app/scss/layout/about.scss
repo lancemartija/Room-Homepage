@@ -1,0 +1,45 @@
+@use '../abstract'as *;
+
+.about {
+  display: flex;
+
+  &__text-container {
+    width: rem(580);
+    margin: auto 0;
+    // width: 100%;
+  }
+
+  &__heading {
+    @include font-face(default, var(--font-default), 700, var(--black));
+    letter-spacing: rem(5);
+    text-transform: uppercase;
+    padding: 0 rem(48);
+    margin-bottom: rem(12);
+  }
+
+  &__description {
+    @include font-face(default, var(--font-default), 500, var(--dark-gray));
+    letter-spacing: rem(-.25);
+    line-height: 1.5;
+    padding: 0 rem(48);
+  }
+}
+
+.image {
+
+  &-dark,
+  &-light {
+    width: 100%;
+    height: rem(266);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &-dark {
+    max-width: rem(420);
+  }
+
+  &-light {
+    max-width: rem(440);
+  }
+}
