@@ -1,7 +1,7 @@
 @use '../abstract'as *;
 
 .about {
-  @include breakpoint-up(tablet) {
+  @include breakpoint-up(laptop) {
     display: flex;
   }
 
@@ -25,11 +25,11 @@
     padding: 0 rem(48);
   }
 
-  @include breakpoint-down(tablet) {
+  @include breakpoint-down(laptop) {
     &__text-container {
       width: auto;
       margin: 0;
-      padding: rem(60) rem(32);
+      padding: rem(96) rem(64);
     }
 
     &__heading {
@@ -40,6 +40,12 @@
     &__description {
       padding: 0;
       line-height: 1.6;
+    }
+  }
+
+  @include breakpoint-down(tablet) {
+    &__text-container {
+      padding: rem(60) rem(32);
     }
   }
 }
@@ -53,14 +59,14 @@
     object-position: center;
   }
 
-  @include breakpoint-up(tablet) {
+  @include breakpoint-up(laptop) {
     &-dark {
       max-width: rem(420);
       height: rem(266);
     }
 
     &-light {
-      @include breakpoint-up(tablet) {
+      @include breakpoint-up(laptop) {
         max-width: rem(440);
         height: rem(266);
       }

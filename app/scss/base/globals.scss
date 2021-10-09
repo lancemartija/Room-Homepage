@@ -16,14 +16,15 @@ body {
     color: var(--white);
   }
 
-  @include breakpoint-up(lg-desktop) {
+  @include breakpoint-up(tablet) {
     display: grid;
     place-items: center;
   }
 
+  @include font-face(default, var(--font-default), 500, var(--black));
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  @include font-face(default, var(--font-default), 500, var(--black));
   position: relative;
 }
 

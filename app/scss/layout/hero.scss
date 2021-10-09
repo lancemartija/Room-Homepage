@@ -1,7 +1,7 @@
 @use '../abstract'as *;
 
 .hero {
-  @include breakpoint-up(tablet) {
+  @include breakpoint-up(laptop) {
     display: flex;
   }
 
@@ -95,28 +95,54 @@
     }
   }
 
-  @include breakpoint-down(tablet) {
+  @include breakpoint-down(laptop) {
+    &__heading {
+      font-size: rem(28);
+    }
+
     &__carousel {
       .desktop-image {
 
         &-1,
         &-2,
         &-3 {
+          width: 100%;
+          max-width: 100%;
           height: auto;
         }
       }
 
       &-control {
         transform: none;
+      }
+    }
 
-        &--left,
-        &--right {
-          width: rem(56);
-          height: rem(56);
+    &__container {
+      padding: rem(96) rem(64);
+      width: auto;
+    }
 
-          img {
-            scale: .7;
-          }
+    &__heading {
+      letter-spacing: rem(-1.5);
+      font-size: rem(28);
+      margin-bottom: rem(20);
+    }
+
+    &__description {
+      margin-bottom: rem(56);
+    }
+  }
+
+  @include breakpoint-down(tablet) {
+    &__carousel-control {
+
+      &--left,
+      &--right {
+        width: rem(56);
+        height: rem(56);
+
+        img {
+          scale: .7;
         }
       }
     }
@@ -127,7 +153,6 @@
     }
 
     &__heading {
-      letter-spacing: rem(-1.5);
       font-size: rem(28);
       margin-bottom: rem(20);
     }
